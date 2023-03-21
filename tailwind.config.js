@@ -3,6 +3,11 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+        tablet: "1024px",
+        medium: "1240px",
+        desktop: "1920px",
+      },
       fontFamily: {
         firago: ["FiraGO"],
       },
