@@ -1,0 +1,24 @@
+{
+  "name": "clipartagencytask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build -i src/styles.css -o public/styles.css",
+    "watch-css": "tailwindcss --watch -i src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukasimonishvili/clipartagencytask.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukasimonishvili/clipartagencytask/issues"
+  },
+  "homepage": "https://github.com/lukasimonishvili/clipartagencytask#readme",
+  "dependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
