@@ -46,7 +46,7 @@ const renderMenu = (list) => {
     result += `<li class="group whitespace-nowrap text-headerText ml-12 text-primary py-4 flex items-center cursor-pointer relative">
                     <span>მეტი</span>
                     <img alt=" " src="./img/drop-down.svg" class="ml-2" />
-                    <div id="subMenu" class="scale-0 absolute bg-white top-12 -left-1/2 py-6 pl-4 pr-20 mt-1 rounded-lg shadow-small transition-all duration-300 group-hover:scale-100"></div>
+                    <div id="subMenu" class="z-30 scale-0 absolute bg-white top-12 -left-1/2 py-6 pl-4 pr-20 mt-1 rounded-lg shadow-small transition-all duration-300 group-hover:scale-100"></div>
                 </li>`;
   }
   menuList.innerHTML = result;
