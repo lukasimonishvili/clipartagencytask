@@ -7,5 +7,82 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body></body>
+  <body class="font-firago overflow-hidden">
+    <header
+      class="w-full bg-white p-4 flex justify-between tablet:px-12 medium:max-w-container medium:mx-auto medium:px-0 desktop:max-w-containerLarge"
+    >
+      <div class="hidden medium:flex">
+        <div
+          class="w-10 h-10 bg-interface-200 rounded-lg flex items-center justify-center cursor-pointer"
+        >
+          <a href="#">
+            <img src="./img/fb.svg" alt="fb" />
+          </a>
+        </div>
+        <div
+          class="w-10 h-10 bg-interface-200 rounded-lg flex items-center justify-center cursor-pointer ml-2"
+        >
+          <a href="#">
+            <img src="./img/tw.svg" alt="fb" />
+          </a>
+        </div>
+        <div
+          class="w-10 h-10 bg-interface-200 rounded-lg flex items-center justify-center cursor-pointer ml-2"
+        >
+          <a href="#">
+            <img src="./img/inst.svg" alt="fb" />
+          </a>
+        </div>
+      </div>
+      <h1
+        class="text-primary text-logoSmall tablet:text-logoMedium medium:text-logoMedium desktop:text-logoLarge"
+      >
+        Company Logo
+      </h1>
+      <div class="flex">
+        <div class="relative z-10">
+          <div
+            class="w-10 h-10 bg-interface-200 rounded-lg flex items-center justify-center cursor-pointer"
+            id="searchButton"
+          >
+            <img src="./img/search.svg" alt="search" />
+          </div>
+          <div
+            class="absolute -z-10 w-36 h-12 -right-1 -top-1 transition-all duration-300 scale-0 pointer-events-none tablet:w-56 desktop:w-80"
+            id="searchBox"
+          >
+            <input
+              class="w-full h-full outline-transparent bg-interface-200 pl-2.5 pr-12 rounded-xl"
+              type="text"
+              placeholder="ძიება..."
+              id="searchInput"
+            />
+          </div>
+        </div>
+        <div
+          class="w-10 h-10 bg-interface-200 rounded-lg flex items-center justify-center cursor-pointer ml-3 medium:hidden"
+          id="menuOpen"
+        >
+          <div class="w-5">
+            <div class="w-full h-0.5 bg-black mb-1"></div>
+            <div class="w-full h-0.5 bg-black mb-1"></div>
+            <div class="w-full h-0.5 bg-black"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav
+      class="fixed left-full top-0 w-screen h-screen z-50 bg-interface-300 transition-all duration-300 medium:static medium:h-auto"
+      id="navBar"
+    >
+      <div class="text-end text-headLine1 text-interface-400 p-5 medium:hidden">
+        <span class="cursor-pointer" id="menuClose">X</span>
+      </div>
+      <ul
+        class="flex flex-col items-center w-full medium:flex-row medium:max-w-container medium:mx-auto desktop:max-w-containerLarge"
+        id="menuList"
+      ></ul>
+    </nav>
+    <script src="./script.js"></script>
+  </body>
 </html>
