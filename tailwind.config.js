@@ -48,6 +48,10 @@ module.exports = {
           "28px",
           { lineHeight: "34px", fontWeight: 600, letterSpacing: "0.36px" },
         ],
+        sliderType: [
+          "13px",
+          { lineHeight: "18px", fontWeight: 400, letterSpacing: "-0.08px" },
+        ],
       },
       colors: {
         primary: "#ff3b30",

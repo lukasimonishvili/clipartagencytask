@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
   <body class="font-firago overflow-hidden">
     <header
@@ -83,6 +87,102 @@
         id="menuList"
       ></ul>
     </nav>
+    <main
+      class="w-full tablet:px-12 medium:mt-8 medium:p-0 medium:max-w-container medium:mx-auto desktop:max-w-containerLarge"
+    >
+      <div class="swiper w-full shadow-large tablet:rounded-xl">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide tablet:relative">
+            <img class="w-full" src="./img/slider-1.png" alt="" />
+            <div
+              class="w-full bg-white p-4 tablet:absolute tablet:left-6 tablet:bottom-6 tablet:w-[calc(100%-48px)] tablet:rounded-xl tablet:p-6 medium:pb-24 desktop:w-[calc(550px+50px)]"
+            >
+              <div class="text-sliderType text-interface-400 mb-2">
+                <span class="text-primary">პოლიტიკა</span>
+                <span>• 18.03.2024</span>
+              </div>
+              <p class="text-headLine1 text-black break-words">
+                ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების სამელიორაციო
+                ინფრასტრუქტურული პროექტები დაიწყება
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="w-full tablet:h-full" src="./img/slider-2.png" alt="" />
+            <div
+              class="w-full bg-white p-4 tablet:absolute tablet:left-6 tablet:bottom-6 tablet:w-[calc(100%-48px)] tablet:rounded-xl tablet:p-6 medium:pb-24 desktop:w-[calc(550px+50px)]"
+            >
+              <div class="text-sliderType text-interface-400 mb-2">
+                <span class="text-primary">პოლიტიკა</span>
+                <span>• 18.03.2024</span>
+              </div>
+              <p class="text-headLine1 text-black break-words">
+                ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების სამელიორაციო
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="w-full tablet:h-full" src="./img/slider-3.png" alt="" />
+            <div
+              class="w-full bg-white p-4 tablet:absolute tablet:left-6 tablet:bottom-6 tablet:w-[calc(100%-48px)] tablet:rounded-xl tablet:p-6 medium:pb-24 desktop:w-[calc(550px+50px)]"
+            >
+              <div class="text-sliderType text-interface-400 mb-2">
+                <span class="text-primary">პოლიტიკა</span>
+                <span>• 18.03.2024</span>
+              </div>
+              <p class="text-headLine1 text-black break-words">
+                სტუდენტების მღელვარება დაჰბრალდა ვითომ განათლების მინისტრს?! -
+                იაგო ხვიჩია ჩხენკელზე
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="w-full tablet:h-full" src="./img/slider-4.png" alt="" />
+            <div
+              class="w-full bg-white p-4 tablet:absolute tablet:left-6 tablet:bottom-6 tablet:w-[calc(100%-48px)] tablet:rounded-xl tablet:p-6 medium:pb-24 desktop:w-[calc(550px+50px)]"
+            >
+              <div class="text-sliderType text-interface-400 mb-2">
+                <span class="text-primary">პოლიტიკა</span>
+                <span>• 18.03.2024</span>
+              </div>
+              <p class="text-headLine1 text-black break-words">
+                „ნორვეგიას ჰოლანდი ჰყავს, ჩვენ კი გურამ კაშია“ - ვილი სანიოლის
+                პრესკონფერენცია
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute z-40 flex justify-between items-center w-full px-5 top-1/3 left-0 tablet:w-auto tablet:top-6 tablet:left-6 tablet:bg-interface-200 tablet:rounded-xl tablet:p-2 medium:left-12 medium:top-auto medium:bottom-12"
+        >
+          <div
+            id="arrowPrev"
+            class="arrow-prev w-8 h-8 bg-interface-200 rounded-lg flex items-center justify-center cursor-pointer tablet:bg-white medium:bg-interface-200"
+          >
+            <img src="./img/slider-arrow.svg" alt="" />
+          </div>
+          <div class="hidden mx-4 text-black text-headLine2 tablet:block">
+            <span id="sliderCounter">1</span>/4
+          </div>
+          <div
+            id="arrowNext"
+            class="arrow-next w-8 h-8 bg-interface-200 rounded-lg flex items-center justify-center cursor-pointer tablet:bg-white medium:bg-interface-200"
+          >
+            <img class="rotate-180" src="./img/slider-arrow.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper", {
+        navigation: {
+          nextEl: ".arrow-next",
+          prevEl: ".arrow-prev",
+        },
+        loop: true,
+      });
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>
