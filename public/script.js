@@ -6,9 +6,6 @@ const navBar = document.getElementById("navBar");
 const searchBox = document.getElementById("searchBox");
 const searchButton = document.getElementById("searchButton");
 const searchInput = document.getElementById("searchInput");
-const sliderCounter = document.getElementById("sliderCounter");
-const arrowNext = document.getElementById("arrowNext");
-const arrowPrev = document.getElementById("arrowPrev");
 
 // toggle menu functions
 const toggleMenu = () => {
@@ -93,7 +90,6 @@ const renderSubMenu = (list) => {
     }"><a href="#">${list[i]}</a></div>`;
   }
   subMenu.innerHTML = result;
-  console.log(subMenu);
 };
 
 const hideUnfitedMenuItems = () => {
@@ -128,29 +124,6 @@ const hideUnfitedMenuItems = () => {
 };
 
 hideUnfitedMenuItems();
-
-// slider functions
-
-const onSliderNext = () => {
-  const currenSlide = +sliderCounter.innerHTML;
-  if (currenSlide === 4) {
-    sliderCounter.innerHTML = 1;
-  } else {
-    sliderCounter.innerHTML = currenSlide + 1;
-  }
-};
-
-const onSliderPrevt = () => {
-  const currenSlide = +sliderCounter.innerHTML;
-  if (currenSlide === 1) {
-    sliderCounter.innerHTML = 4;
-  } else {
-    sliderCounter.innerHTML = currenSlide - 1;
-  }
-};
-
-arrowNext.addEventListener("click", onSliderNext);
-arrowPrev.addEventListener("click", onSliderPrevt);
 
 // window resize tools
 
